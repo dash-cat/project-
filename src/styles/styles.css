@@ -1,0 +1,28 @@
+body {
+    background: #000;
+    overflow: hidden;
+  }
+  
+  .star {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    height: 1px;
+    background: #fff;
+    border-radius: 50%;
+    animation: twinkle 1s infinite;
+  }
+  
+  @keyframes twinkle {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
